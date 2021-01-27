@@ -12,8 +12,8 @@
 # NAT table rules
 *nat
 :POSTROUTING ACCEPT [0:0]
-# Allow traffic from OpenVPN client to wlp0s20f3 (change to the interface you discovered!)
--A POSTROUTING -s 10.8.0.0/8 -o wlp0s20f3 -j MASQUERADE
+# Allow traffic from OpenVPN client to ens3 (change to the interface you discovered!)
+-A POSTROUTING -s 10.8.0.0/8 -o ens3 -j MASQUERADE
 COMMIT
 # END OPENVPN RULES
 
